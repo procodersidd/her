@@ -1,0 +1,110 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom, #ffe6f2, #b3d9ff);
+    color: #ff69b4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    color: #ff1493;
+    text-shadow: 2px 2px #fff;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Images */
+.kitty-img {
+    width: 200px;
+    border: 5px solid #ff69b4;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* Reasons List */
+.reasons {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.reasons li {
+    font-size: 1.1em;
+    background: #fff0f5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dashed #ff69b4;
+}
+
+/* Timeline */
+.timeline p {
+    background: #e6f3ff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dotted #87ceeb;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.yes-button {
+    background: #ff1493;
+    font-size: 1.5em;
+}
+
+.no-button {
+    background: #ccc;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    opacity: 0.5;
+}
+
+.no-button:hover {
+    transform: translateX(20px); /* Moves away playfully */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 2em; }
+    p { font-size: 1em; }
+    .button { padding: 10px 20px; }
+}
